@@ -29,9 +29,9 @@ jobs:
       - name: Run a one-line script
         run: chmod +x build-dotnet-AppImage.sh && ./build-dotnet-AppImage.sh 8.0.408 -x64
 
-      # - name: Upload a Build Artifact
-      #   uses: actions/upload-artifact@v4.6.2
-      #     with:
-      #     name: # optional, default is artifact
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.6.2
+        with: ./dotnet-x86_64.AppImage
+          name: "dotnet.AppImage"
 
       
